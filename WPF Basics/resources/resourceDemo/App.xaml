@@ -1,0 +1,12 @@
+﻿<Application x:Class="resourceDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:resourceDemo"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="GreenColorBrush" Color="Green"/>
+            <SolidColorBrush x:Key="YellowColorBrush" Color="Yellow"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
