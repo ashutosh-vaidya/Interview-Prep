@@ -9,6 +9,7 @@ Here are some benefits of WPF over WinForms:
 5. Databinding is superior.
 6. MVVM supports loose coupling and better unit test capabilities.
 
+[**What is Dispatcher**](https://github.com/ashutosh-vaidya/Csharp-and-WPF-Interview-Prep/tree/main/dispatcher)
 
 
 
