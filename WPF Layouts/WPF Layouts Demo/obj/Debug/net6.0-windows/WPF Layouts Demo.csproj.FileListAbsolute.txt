@@ -1,0 +1,21 @@
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\bin\Debug\net6.0-windows\WPF Layouts Demo.exe
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\bin\Debug\net6.0-windows\WPF Layouts Demo.deps.json
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\bin\Debug\net6.0-windows\WPF Layouts Demo.runtimeconfig.json
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\bin\Debug\net6.0-windows\WPF Layouts Demo.dll
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\bin\Debug\net6.0-windows\WPF Layouts Demo.pdb
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.csproj.AssemblyReference.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\App.g.cs
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo_MarkupCompile.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo_MarkupCompile.lref
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.g.resources
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.AssemblyInfoInputs.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.AssemblyInfo.cs
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.csproj.CoreCompileInputs.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.dll
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\refint\WPF Layouts Demo.dll
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.pdb
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\WPF Layouts Demo.genruntimeconfig.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\WPF Layouts\WPF Layouts Demo\obj\Debug\net6.0-windows\ref\WPF Layouts Demo.dll

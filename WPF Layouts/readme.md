@@ -13,3 +13,6 @@ There are five major layouts in WPF as follows,
 
 5. Dock Panel: In the DockPanel, you can dock the child elements to the left, right, top, bottom, or center using `DockPanel.Doc` property. The child control which can be docked to the center must be defined last and should have `LastChildFill` property set to true.
 
+How they look:
+
+![WPF Layout Demo](./img.png)
