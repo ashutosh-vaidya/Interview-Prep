@@ -1,0 +1,21 @@
+﻿<Window x:Class="routedEventsDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:routedEventsDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="OuterButton" Margin="10" Height="150" Click="OuterButton_Click" PreviewMouseLeftButtonDown="OuterButton_PreviewMouseLeftButtonDown">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button x:Name="InnerBubbleEventBtn" Content="Inner Button - Bubble" BorderBrush="Black" BorderThickness="2" Padding="5" Margin="5"
+                        Click="InnerBubbleEventBtn_Click"/>
+                <Button x:Name="InnerChangeTitleBtn"  Content="Inner Button - Change Title" BorderBrush="Black" BorderThickness="2" Padding="5" Margin="5"
+                        Click="InnerChangeTitleBtn_Click"/>
+                <Button x:Name="InnerTunnelEventBtn" Content="Inner Button - Tunnel" BorderBrush="Black" BorderThickness="2" Padding="5" Margin="5"
+                        PreviewMouseLeftButtonDown="InnerTunnelEventBtn_PreviewMouseLeftButtonDown"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>
