@@ -1,0 +1,17 @@
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.csproj.AssemblyReference.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.Form1.resources
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.csproj.GenerateResource.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.AssemblyInfoInputs.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.AssemblyInfo.cs
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.csproj.CoreCompileInputs.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\bin\Debug\net6.0-windows\dispatcherDemo_winform.exe
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\bin\Debug\net6.0-windows\dispatcherDemo_winform.deps.json
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\bin\Debug\net6.0-windows\dispatcherDemo_winform.runtimeconfig.json
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\bin\Debug\net6.0-windows\dispatcherDemo_winform.dll
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\bin\Debug\net6.0-windows\dispatcherDemo_winform.pdb
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.dll
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\refint\dispatcherDemo_winform.dll
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.pdb
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\dispatcherDemo_winform.genruntimeconfig.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\dispatcherDemo_winform\obj\Debug\net6.0-windows\ref\dispatcherDemo_winform.dll
