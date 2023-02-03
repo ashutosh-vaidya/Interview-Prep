@@ -45,6 +45,7 @@ See the above XAML snippet, as a part of the root element of each XAML are two o
 
 * [**What is Dispatcher**](https://github.com/ashutosh-vaidya/Csharp-and-WPF-Interview-Prep/tree/main/dispatcher)
 * [**WPF Layouts**](https://github.com/ashutosh-vaidya/Csharp-and-WPF-Interview-Prep/tree/main/WPF%20Layouts)
+* [**WPF Resources**](https://github.com/ashutosh-vaidya/Csharp-and-WPF-Interview-Prep/tree/main/WPF%20Basics/resources)
 * [**Data Binding Modes**](https://github.com/ashutosh-vaidya/Csharp-and-WPF-Interview-Prep/tree/main/data%20binding)
 * [**Routed Events**](https://github.com/ashutosh-vaidya/Csharp-and-WPF-Interview-Prep/tree/main/WPF%20Basics/routed%20events)
 
