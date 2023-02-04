@@ -37,3 +37,11 @@ Resources can be defined at following places:
 </Application.Resources>
 ```
 
+From [StackOverflow](https://stackoverflow.com/a/200875/1296450)
+
+A StaticResource will be resolved and assigned to the property during the loading of the XAML which occurs before the application is actually run. It will only be assigned once and any changes to resource dictionary ignored.
+
+A DynamicResource assigns an Expression object to the property during loading but does not actually lookup the resource until runtime when the Expression object is asked for the value. This defers looking up the resource until it is needed at runtime. A good example would be a forward reference to a resource defined later on in the XAML. Another example is a resource that will not even exist until runtime. It will update the target if the source resource dictionary is changed.
+
+Static Resources retrieved once by referencing element and used for the lifetime of the resources. Whereas, DynamicResources retrieve every time they are used. Hence the downside of Dynamic resources is that they tend to decrease application performance.
+
