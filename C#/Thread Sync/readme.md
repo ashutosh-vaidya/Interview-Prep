@@ -1,6 +1,6 @@
 This repo contains the demo for the Thread Synchronization in C#.
 
-Adopted from : [Thread Synchronization in C# .Net made easy! | Lock | Monitor | Mutex | Semaphore](https://youtu.be/5Zv8fF-KPrE)
+Ref: [Thread Synchronization in C# .Net made easy! | Lock | Monitor | Mutex | Semaphore](https://youtu.be/5Zv8fF-KPrE)
 
 **What is Thread Synchronization**
 
