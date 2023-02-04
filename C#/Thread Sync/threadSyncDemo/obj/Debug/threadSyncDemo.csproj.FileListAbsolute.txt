@@ -1,0 +1,8 @@
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\bin\Debug\threadSyncDemo.exe.config
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\bin\Debug\threadSyncDemo.exe
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\bin\Debug\threadSyncDemo.pdb
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\obj\Debug\threadSyncDemo.csproj.AssemblyReference.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\obj\Debug\threadSyncDemo.csproj.SuggestedBindingRedirects.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\obj\Debug\threadSyncDemo.csproj.CoreCompileInputs.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\obj\Debug\threadSyncDemo.exe
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\Thread Sync\threadSyncDemo\obj\Debug\threadSyncDemo.pdb
