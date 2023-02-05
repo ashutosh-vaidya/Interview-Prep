@@ -1,7 +1,5 @@
 This repo contains the demo for the Thread Synchronization in C#.
 
-Ref: [Thread Synchronization in C# .Net made easy! | Lock | Monitor | Mutex | Semaphore](https://youtu.be/5Zv8fF-KPrE)
-
 **What is Thread Synchronization**
 
 Data inconsistency occurs when more than one thread accesses a shared resource such as in-memory data (instance of class, class variables) and external objects (files, database) at the same time. For example, let's assume thread 1 is writing the data to a file, and at the same time thread 2 attempting to read that file. This will cause data inconstancy and the potential to read stale data. To avoid this, thread synchronization can be implemented.
@@ -17,3 +15,12 @@ Synchronization ensures that only one thread is accessing the shared resource at
 5. Mutex
 6. Semaphore
 7. Semaphore Slim
+
+Ref: 
+* [Thread Synchronization in C# .Net made easy! | Lock | Monitor | Mutex | Semaphore](https://youtu.be/5Zv8fF-KPrE)
+* [Thread Synchronization in C#](https://dotnettutorials.net/lesson/thread-synchronization-in-csharp/)
+* [Lock](https://dotnettutorials.net/lesson/locking-in-multithreading/)
+* [Monitor](https://dotnettutorials.net/lesson/multithreading-using-monitor/)
+* [Mutex](https://dotnettutorials.net/lesson/mutex-in-multithreading/)
+* [Semaphor](https://dotnettutorials.net/lesson/semaphore-in-multithreading/)
+* [SemaphoreSlim](https://dotnettutorials.net/lesson/semaphoreslim-class-in-csharp/)
