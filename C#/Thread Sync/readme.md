@@ -115,23 +115,90 @@ using(Mutex mutex = new Mutex(false))
  } 
  ```
  
-Using the `using` block is recommended way since class `Mutex` is derived from `WaitHandle` which implements `IDisposible` interface. If `using` is not used then we have to make sure to call `Dispose()` manually.  
-    
+> Using the `using` block is recommended way since class `Mutex` is derived from `WaitHandle` which implements `IDisposible` interface. If `using` is not used then we have to make sure to call `Dispose()` manually. 
 
+If a thread terminates while owning a mutex, the mutex is said to be abandoned. The state of the mutex is set to signaled, and the next waiting thread gets ownership. Beginning in version 2.0 of the .NET Framework, an `AbandonedMutexException` is thrown in the next thread that acquires the abandoned mutex. 
 
+In the case of a system-wide mutex, an abandoned mutex might indicate that an application has been terminated abruptly (for example, by using Windows Task Manager).
 
+>***Caution:*** An abandoned mutex often indicates a serious error in the code. When a thread exits without releasing the mutex, the data structures protected by the mutex might not be in a consistent state. The next thread to request ownership of the mutex can handle this exception and proceed, if the integrity of the data structures can be verified. 
 
+**Types of Mutex**
 
+Mutexes are of two types: 
+1. Local mutexes, which are unnamed. A local mutex exists only within your process. It can be used by any thread in your process that has a reference to the Mutex object that represents the mutex. Each unnamed Mutex object represents a separate local mutex.
+2. Named system mutexes, this are visible throughout the operating system, and can be used to synchronize the activities of processes. You can create a Mutex object that represents a named system mutex by using a constructor that accepts a name. The operating-system object can be created at the same time, or it can exist before the creation of the Mutex object. You can create multiple Mutex objects that represent the same named system mutex, and you can use the `OpenExisting` method to open an existing named system mutex.
 
+**4) Semaphore:**
 
+Using Mutex, only one external thread can access our application code at any given point in time and this we have already seen in our previous article. But, if we want more control over the number of external threads that can access our application code, then we need to use the Semaphore class in C#.
 
+In simplar words, the Semaphore class is used to limit the number of external threads that can access a shared resource concurrently.
 
+Syntax:
+```C#
+public static Semaphore semaphore = new Semaphore(initialCount:2, maximumCount:3)
+public void criticalWorkMethod()
+{
+    //External Thread trying to access critical shared resource
+    semaphore.WaitOne();
+    //Following code block can be accessed by maximum 2 threads
+        //Do some work
+        //Completed the work
+    //release the lock
+    semaphore.Release();
+ }
+ ```
+The count on a semaphore is decremented each time a thread enters the semaphore, and incremented when a thread releases the semaphore. When the count is zero, subsequent requests block until other threads release the semaphore. When all threads have released the semaphore, the count is at the maximum value specified when the semaphore was created.
 
-4. Manual Reset Event
-5. Auto Reset Event
-6. Mutex
-7. Semaphore
-8. Semaphore Slim
+There is no guaranteed order, such as FIFO or LIFO, in which blocked threads enter the semaphore.
+
+**5) SemaphoreSlim:**
+
+The SemaphoreSlim Class in C# is recommended for synchronization within a single app. The SemaphoreSlim class represents a lightweight, fast semaphore that can be used for waiting within a single process when wait times are expected to be very short.
+
+Unlike the Semaphore class, the SemaphoreSlim class doesn’t support named system semaphores. You can use it as a local semaphore only.
+
+**Signaling Methodology**
+
+Along with all these locking mechanisms, we can also achieve thread synchronization using the Signaling technique. Here once thread 1 got access to the critical resource/method it signals other threads to wait and once it is done with the process it signals other threads that the resource is now available for access.
+
+Use case of this 
+
+There are two ways of signaling methodology,
+
+**1) AutoResetEvent:** 
+
+AutoResetEvent is used to send signals between two threads. This class Notifies a waiting thread that an event has occurred.
+
+This is a sealed class and hence cannot be inherited. And it is inherited from the `EventWaitHandle` class.
+
+**How AutoResetEvent Work in C#?**
+
+The AutoResetEvent in C# maintains a boolean variable in memory. If the boolean variable is false then it blocks the thread and if the boolean variable is true it unblocks the thread. So, when we create an instance of AutoResetEvent class, we need to pass the default value of the boolean value to the constructor of AutoResetEvent class. The following is the syntax to instantiate an AutoResetEvent object.
+```C#
+AutoResetEvent autoResetEvent = new AutoResetEvent(false);
+```
+
+The WaitOne method blocks the current thread and waits for the signal by another thread. That means the WaitOne method puts the current thread into a Sleep state of the thread. The WaitOne method returns true if it receives the signal else returns false. We need to call the WaitOne method on the AutoResetEvent object as follows.
+```C#
+autoResetEvent.WaitOne();
+//or we can use
+autoResetEvent.WaitOne(TimeSpan.FromSeconds(2);
+```
+
+The Set method sent the signal to the waiting thread to proceed with its work. Following is the syntax to call the Set method.
+```C#
+autoResetEvent.Set();
+```
+
+>**Note:** The most important point that you need to remember is both threads will share the same AutoResetEvent object. Any thread can enter into a wait state by calling the WaitOne() method of the AutoResetEvent object. When the other thread calls the Set() method it unblocks the waiting thread.
+
+There is no guarantee that every call to the Set method will release a thread. If two calls are too close together, so that the second call occurs before a thread has been released, only one thread is released. It’s as if the second call did not happen. Also, if Set is called when there are no threads waiting and the AutoResetEvent is already signaled, the call has no effect.
+
+**2) ManualResetEvent:**
+
+The ManualResetEvent Class in C# works exactly the same as the AutoResetEvent Class in C#. The one and the only difference between AutoResetEvent and ManualResetEvent in C# is that for each WaitOne method there should be a corresponding Set method in AutoResetEvent while for all the WaitOne methods, one Set method is enough to release in the case of ManualResetEvent.
 
 Ref: 
 * [Thread Synchronization in C# .Net made easy! | Lock | Monitor | Mutex | Semaphore](https://youtu.be/5Zv8fF-KPrE)
@@ -141,3 +208,4 @@ Ref:
 * [Mutex](https://dotnettutorials.net/lesson/mutex-in-multithreading/)
 * [Semaphor](https://dotnettutorials.net/lesson/semaphore-in-multithreading/)
 * [SemaphoreSlim](https://dotnettutorials.net/lesson/semaphoreslim-class-in-csharp/)
+* [AutoResetEvent and ManualResetEvent](https://dotnettutorials.net/lesson/autoresetevent-and-manualresetevent-in-csharp/)
