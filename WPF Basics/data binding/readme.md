@@ -1,7 +1,15 @@
+**What is data binding?**
+Data binding is the process that establishes a connection between the app UI and the data it displays.Data binding is essentially the bridge between your binding target and your binding source.
+
+![Data Binding Demo](./databinding.png)
+
+Typically, each binding has four components:
+- A binding target object.
+- A target property.
+- A binding source.
+- A path to the value in the binding source to use.
+
 **Data Binding modes**
-
-![Data Binding Demo Demo](./databinding.png)
-
 |Name| Description|
 |---|---|
 |OneWay| The target property is updated when the source property changes.|
