@@ -1,0 +1,8 @@
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\bin\Debug\EventsDemo.exe.config
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\bin\Debug\EventsDemo.exe
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\bin\Debug\EventsDemo.pdb
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\obj\Debug\EventsDemo.csproj.AssemblyReference.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\obj\Debug\EventsDemo.csproj.SuggestedBindingRedirects.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\obj\Debug\EventsDemo.csproj.CoreCompileInputs.cache
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\obj\Debug\EventsDemo.exe
+C:\Dev\GitHub\Csharp and WPF Interview Prep\C#\EventsDemo\obj\Debug\EventsDemo.pdb
