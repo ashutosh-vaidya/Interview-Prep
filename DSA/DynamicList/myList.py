@@ -11,7 +11,7 @@ class MyList:
 
     # private methods
     def __resize_array(self) -> None:
-        new_capacity = self.size * 2
+        new_capacity = self.size + 8
         new_array = self.__create_array(new_capacity)
         for i in range(self.n):
             new_array[i] = self.array[i]
@@ -50,12 +50,12 @@ class MyList:
         if 0 <= index < self.n:
             return self.array[index]
         else:
-            return 'IndexError: list index out of range'
+            raise IndexError("list index out of range")
 
     # 6. pop
     def pop(self):
         if self.n == 0:
-            return "IndexError: pop from empty list"
+            raise IndexError("pop from empty list")
         print(self.array[self.n - 1])
         self.n -= 1
 
@@ -74,7 +74,7 @@ class MyList:
             if self.array[i] == value:
                 return i
         else:
-            return f"ValueError: {value} is not in list"
+            raise ValueError(f"{value} is not in list")
 
     # 9. insert
     def insert(self, pos, value):
@@ -115,5 +115,42 @@ class MyList:
         if type(index) == int:
             self.__delitem__(index)
         else:
-            return "ValueError: list.remove(x): x not in list"
+            raise ValueError("list.remove(x): x not in list")
+
+    # 12. min
+    def __min__(self):
+        if self.n == 0:
+            raise ValueError("List is empty")
+
+        min_value = self.array[0]
+
+        for i in range(1, self.n):
+            print(type(self.array[i]))
+            if min_value > self.array[i]:
+                min_value = self.array[i]
+
+        return min_value
+
+    # 13. max
+    def __max__(self):
+        if self.n == 0:
+            raise ValueError("List is empty")
+
+        max_value = self.array[0]
+
+        for i in range(1, self.n):
+            print(type(self.array[i]))
+            if max_value < self.array[i]:
+                max_value = self.array[i]
+
+        return max_value
+
+    # 14. sum
+    def __sum__(self):
+        total = 0
+        for i in range(self.n):
+            total += self.array[i]
+        return total
+
+
 

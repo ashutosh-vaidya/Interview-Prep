@@ -1,8 +1,4 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+from DynamicList.myList import MyList
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -11,6 +7,27 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    #print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    my_list = MyList()
+    my_list.append(3)
+    my_list.append(1)
+    my_list.append(4)
+    my_list.append(6)
+    my_list.append(7)
+    my_list.append(2)
+    my_list.append(5)
+    print(my_list)
+    print(f"Min Value is : {min(my_list)}")
+    print(f"Max Value is : {max(my_list)}")
+
+    print("-----"*10)
+
+    char_list = MyList()
+    char_list.append("b")
+    char_list.append("z")
+    char_list.append("A")
+    char_list.append("c")
+    print(char_list)
+    print(f"Min Value is : {min(char_list)}")
+    print(f"Max Value is : {max(char_list)}")
