@@ -10,7 +10,8 @@ class MyList:
         self.array = self.__create_array(self.size)
 
     # private methods
-    def __resize_array(self, new_capacity: int) -> None:
+    def __resize_array(self) -> None:
+        new_capacity = self.size * 2
         new_array = self.__create_array(new_capacity)
         for i in range(self.n):
             new_array[i] = self.array[i]
@@ -30,7 +31,7 @@ class MyList:
     def append(self, val):
         if self.n == self.size:
             # The list is at full capacity, resize the list
-            self.__resize_array(self.size * 2)
+            self.__resize_array()
         self.array[self.n] = val
         self.n += 1
 
@@ -39,9 +40,8 @@ class MyList:
         # [1,2,3]:
         result = ""
         if self.n > 0:
-            result = [str(item) + "," for item in self.array]
-            # for i in range(self.n):
-            # result = result + str(self.array[i]) + ","
+            for i in range(self.n):
+                result = result + str(self.array[i]) + ","
         return "[" + result[:-1] + "]"
 
     # 5. indexing
@@ -67,7 +67,53 @@ class MyList:
         # Create a c type array with capacity = self.size
         self.array = self.__create_array(self.size)
 
-    # 8. find
+    # 8. index
+    def index(self, value):
+        # TODO: The optional arguments start and end
+        for i in range(self.n):
+            if self.array[i] == value:
+                return i
+        else:
+            return f"ValueError: {value} is not in list"
+
     # 9. insert
+    def insert(self, pos, value):
+        # TODO: Implement negative indexing
+        # check if array is at full capacity and resize it
+        if self.n == self.size:
+            self.__resize_array()
+
+        # if user gives a index which is out of bound then as per list implementation make it last index
+        if pos > self.n:
+            pos = self.n
+
+        if pos <= self.n:
+            for i in range(self.n, pos, -1):
+                self.array[i] = self.array[i - 1]
+
+        self.array[pos] = value
+        self.n = self.n + 1
+
     # 10. delete
+    def __delitem__(self, key):
+        # TODO : Negative indexing
+        if key > self.n:
+            # TODO: Check why this is not getting returned
+            # print("here")
+            return "IndexError: list assignment index out of range"
+
+        # left shift the values from key onward by 1
+        for i in range(key, self.n - 1, 1):
+            self.array[i] = self.array[i + 1]
+
+        self.n -= 1
+
     # 11. remove
+    def remove(self, value):
+        # 1. Find the index of the value
+        index = self.index(value)
+        if type(index) == int:
+            self.__delitem__(index)
+        else:
+            return "ValueError: list.remove(x): x not in list"
+
