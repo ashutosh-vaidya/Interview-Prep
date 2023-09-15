@@ -212,3 +212,27 @@ class LinkedList:
             __index += 1
 
         raise IndexError("Out of bound")
+
+    # delete by index
+    def __delitem__(self, key):
+        # TODO: Implement negative indexing
+        if self.head is None:
+            raise IndexError("Trying to delete from empty linkedlist")
+
+        if key == 0:
+            # delete head
+            return self.delete_head()
+
+        curr = self.head.next
+        index = 1
+
+        while curr.next is not None:
+            if index == key - 1: # key - 1 because we want to stop before index
+                # link curr.next.next with curr.next
+                curr.next = curr.next.next
+                self.__decrement_node_count()
+                return
+            curr = curr.next
+            index += 1
+
+        raise IndexError("Index out of bound")

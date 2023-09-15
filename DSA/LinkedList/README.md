@@ -5,7 +5,7 @@
 
 ----
 
-## Features implemented:
+### Features implemented:
 
 - [X] Create `Node`
 - [X] Create `LinkedList`
@@ -21,4 +21,11 @@
 - [X] implement remove by value (remove)
 - [X] implement search by value (find_index / get_index)
 - [X] implement search by index (indexing)
-- [ ] delete by index (`del LL[1]`)
+- [X] delete by index (`del LL[1]`)
+
+----
+
+### Future enhancements
+- [ ] Implement negative indexing
+- [ ] Sorting
+- [ ] Min/Max
