@@ -62,5 +62,11 @@ additional elements. Dynamic arrays are also referential in nature and thus solv
 
 **Python's list** are created using dynamic array hence it can save heterogeneous elements.
 
+[Implementation of Dynamic List](https://github.com/ashutosh-vaidya/Interview-Prep/tree/main/DSA/DynamicList)
+
+----
+
+## Linked List
+
 
 
