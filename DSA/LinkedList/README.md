@@ -19,6 +19,6 @@
 - [X] implement remove head
 - [X] implement remove tail (pop)
 - [X] implement remove by value (remove)
-- [ ] implement search by value (find_index / get_index)
-- [ ] implement search by index (indexing)
+- [X] implement search by value (find_index / get_index)
+- [X] implement search by index (indexing)
 - [ ] delete by index (`del LL[1]`)

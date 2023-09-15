@@ -185,3 +185,30 @@ class LinkedList:
 
         # if value does not exist
         raise ValueError(f"Value {value} does not exists in the linked list")
+
+    # Search by value
+    def search(self, value):
+        index = 0
+        curr = self.head
+
+        while curr is not None:
+            if curr.data == value:
+                return index
+            curr = curr.next
+            index += 1
+
+        return f"{value} does not exists in the linkedlist"
+
+    # search by index
+    def __getitem__(self, index):
+        # TODO: Implement negative indexing
+        curr = self.head
+        __index = 0
+
+        while curr is not None:
+            if __index == index:
+                return curr.data
+            curr = curr.next
+            __index += 1
+
+        raise IndexError("Out of bound")
