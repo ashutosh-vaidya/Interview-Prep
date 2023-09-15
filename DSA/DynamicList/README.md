@@ -5,6 +5,8 @@
 - How dynamic array works.
 - How list is created in Python. 
 
+---
+
 ### Features implemented:
 1. Create list
 2. len
@@ -21,6 +23,8 @@
 13. max
 14. sum
 
+---
+
 ### TODO:
 
 - [ ] sort
@@ -28,3 +32,10 @@
 - [ ] merge
 - [ ] slicing
 - [ ] negative indexing
+
+---
+
+### References:
+
+- [DSA in Python in 1 video - Dyanmic Array](https://youtu.be/f9Aje_cN_CY?t=6709)
+- [Python list](https://docs.python.org/3/library/stdtypes.html?highlight=list#lists)
