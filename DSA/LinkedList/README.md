@@ -14,10 +14,11 @@
 - [X] implement traverse / print
 - [X] implement insert from tail (append)
 - [X] implement insert from middle (insert_after)
-- [ ] implement `clear()`
-- [ ] implement remove head
-- [ ] implement remove tail (pop)
-- [ ] implement remove by value (remove)
+- [X] implement insert from middle (insert_before)
+- [X] implement `clear()`
+- [X] implement remove head
+- [X] implement remove tail (pop)
+- [X] implement remove by value (remove)
 - [ ] implement search by value (find_index / get_index)
 - [ ] implement search by index (indexing)
 - [ ] delete by index (`del LL[1]`)

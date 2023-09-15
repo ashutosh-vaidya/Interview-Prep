@@ -39,19 +39,64 @@ if __name__ == '__main__':
     print(f"No of nodes = {len(ll)}")
     print(ll)
 
+    print("inserting after (single item linkedlist)")
+    new_ll = LinkedList()
+    new_ll.append(1)
+    new_ll.insert_after(1, 2)
+    print(f"No of nodes = {len(new_ll)}")
+    print(new_ll)
+
+    #following code should throw error
     #print("inserting after (empty linkedlist)")
     #new_ll = LinkedList()
     #new_ll.insert_after(1, 1)
 
+    #print("inserting after (value does not exist)")
+    #ll.insert_after(100, 200)
+    #print(f"No of nodes = {len(ll)}")
+    #print(ll)
 
+    print("inserting before (single item linkedlist/inserting at head)")
+    new_ll = LinkedList()
+    new_ll.append(1)
+    new_ll.insert_before(1, 2)
+    print(f"No of nodes = {len(new_ll)}")
+    print(new_ll)
 
+    print("inserting before (1)")
+    ll.insert_before(1, 0)
+    print(f"No of nodes = {len(ll)}")
+    print(ll)
 
+    print("inserting before (tail)")
+    ll.insert_before("world","again")
+    print(f"No of nodes = {len(ll)}")
+    print(ll)
 
+    # following code should throw error
+    #print("inserting before (empty linkedlist)")
+    #new_ll = LinkedList()
+    #new_ll.insert_before(1, 1)
 
+    #print("inserting before (value does not exist)")
+    #ll.insert_before(100, 200)
+    #print(f"No of nodes = {len(ll)}")
+    #print(ll)
 
+    print(f"Before head => {ll.head.data}")
+    print(f"No of nodes = {len(ll)}")
+    print(ll)
+    print("Removing head")
+    ll.delete_head()
+    print(f"After head => {ll.head.data}")
+    print(f"No of nodes = {len(ll)}")
+    print(ll)
 
-
-    #print_hi('PyCharm')
+    #print("Before Clearing ll")
+    #print(f"ll - {ll}")
+    #ll.clear()
+    #print("after clearing ll")
+    #print(f"ll - {ll}")
 
     # Dynamic List
 
